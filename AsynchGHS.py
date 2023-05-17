@@ -65,10 +65,10 @@ class Node:
 
     comm = mailboxTo.put_async(payload, payload_size_in_bytes)
     self.pending_comms.append(comm)
-    this_actor.info(f"[{MessageType.CONNECT.name}] {self.id} -> {m.dNode}")
+    this_actor.info(f"[{MessageType.CONNECT.name}] ({self.id} -> {m.dNode})")
 
   def onConnect(self, msg):
-    this_actor.info(f"[{MessageType.CONNECT.name}] {self.id} <- {msg.source}")
+    this_actor.info(f"[{MessageType.CONNECT.name}] ({self.id} <- {msg.source})")
 
     source_level = msg.msg_args[0]
     j = self.get_edge_by_dNode(msg.source)
@@ -132,6 +132,6 @@ if __name__ == '__main__':
   e.load_deployment(sys.argv[2])
 
   # Run the simulation
-  e.run()
+  e.run_until(Engine.clock + 200)
 
   this_actor.info("Simulation is over")
