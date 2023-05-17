@@ -1,0 +1,36 @@
+[  6.000000][     host4:node      ] [SELF-AWAKENED] (Did 6 flops, more than 6 flop limit!)
+[  6.000000][     host4:node      ] [CONNECT] 4 -> 5
+[  7.000000][     host0:node      ] [SELF-AWAKENED] (Did 7 flops, more than 7 flop limit!)
+[  7.000000][     host0:node      ] [CONNECT] 0 -> 5
+[  8.000000][     host5:node      ] [AWAKENED by 4] (Did 8 flops, less than 50 flop limit!)
+[  8.000000][     host5:node      ] [CONNECT] 5 -> 4
+[  8.000000][     host5:node      ] [CONNECT] 5 <- 4
+[ 11.000000][     host5:node      ] [CONNECT] 5 <- 0
+[ 11.000000][     host5:node      ] TODO
+[ 14.000000][     host4:node      ] [CONNECT] 4 <- 5
+[ 19.000000][     host8:node      ] [SELF-AWAKENED] (Did 19 flops, more than 18 flop limit!)
+[ 19.000000][     host8:node      ] [CONNECT] 8 -> 3
+[ 21.000000][     host3:node      ] [AWAKENED by 8] (Did 21 flops, less than 41 flop limit!)
+[ 21.000000][     host3:node      ] [CONNECT] 3 -> 8
+[ 21.000000][     host3:node      ] [CONNECT] 3 <- 8
+[ 24.000000][     host8:node      ] [CONNECT] 8 <- 3
+[ 31.000000][     host1:node      ] [SELF-AWAKENED] (Did 31 flops, more than 28 flop limit!)
+[ 31.000000][     host1:node      ] [CONNECT] 1 -> 0
+[ 34.000000][     host0:node      ] [CONNECT] 0 <- 1
+[ 34.000000][     host0:node      ] TODO
+[ 46.000000][     host2:node      ] [SELF-AWAKENED] (Did 46 flops, more than 46 flop limit!)
+[ 46.000000][     host2:node      ] [CONNECT] 2 -> 3
+[ 49.000000][     host3:node      ] [CONNECT] 3 <- 2
+[ 49.000000][     host3:node      ] TODO
+[ 50.000000][     host9:node      ] [SELF-AWAKENED] (Did 50 flops, more than 41 flop limit!)
+[ 50.000000][     host9:node      ] [CONNECT] 9 -> 8
+[ 52.000000][     host6:node      ] [SELF-AWAKENED] (Did 52 flops, more than 50 flop limit!)
+[ 52.000000][     host6:node      ] [CONNECT] 6 -> 4
+[ 53.000000][     host7:node      ] [SELF-AWAKENED] (Did 53 flops, more than 50 flop limit!)
+[ 53.000000][     host7:node      ] [CONNECT] 7 -> 4
+[ 57.000000][     host8:node      ] [CONNECT] 8 <- 9
+[ 57.000000][     host8:node      ] TODO
+[ 61.000000][     host4:node      ] [CONNECT] 4 <- 6
+[ 61.000000][     host4:node      ] TODO
+[ 66.000000][     host4:node      ] [CONNECT] 4 <- 7
+[ 66.000000][     host4:node      ] TODO

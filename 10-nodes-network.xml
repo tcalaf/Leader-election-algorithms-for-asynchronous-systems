@@ -1,0 +1,52 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "https://simgrid.org/simgrid.dtd">
+<platform version="4.1">
+  <zone id="zone0" routing="Full">
+    <host id="host0" speed="1f"/>
+    <host id="host1" speed="1f"/>
+    <host id="host2" speed="1f"/>
+    <host id="host3" speed="1f"/>
+    <host id="host4" speed="1f"/>
+    <host id="host5" speed="1f"/>
+    <host id="host6" speed="1f"/>
+    <host id="host7" speed="1f"/>
+    <host id="host8" speed="1f"/>
+    <host id="host9" speed="1f"/>
+
+    <link id="link01" bandwidth="3Bps" latency="0"/>
+    <link id="link05" bandwidth="2Bps" latency="0"/>
+    <link id="link12" bandwidth="17Bps" latency="0"/>
+    <link id="link13" bandwidth="16Bps" latency="0"/>
+    <link id="link23" bandwidth="8Bps" latency="0"/>
+    <link id="link28" bandwidth="18Bps" latency="0"/>
+    <link id="link34" bandwidth="11Bps" latency="0"/>
+    <link id="link38" bandwidth="4Bps" latency="0"/>
+    <link id="link45" bandwidth="1Bps" latency="0"/>
+    <link id="link46" bandwidth="6Bps" latency="0"/>
+    <link id="link47" bandwidth="5Bps" latency="0"/>
+    <link id="link48" bandwidth="10Bps" latency="0"/>
+    <link id="link56" bandwidth="7Bps" latency="0"/>
+    <link id="link67" bandwidth="15Bps" latency="0"/>
+    <link id="link78" bandwidth="12Bps" latency="0"/>
+    <link id="link79" bandwidth="13Bps" latency="0"/>
+    <link id="link89" bandwidth="9Bps" latency="0"/>
+
+    <route src="host0" dst="host1"><link_ctn id="link01"/></route>
+    <route src="host0" dst="host5"><link_ctn id="link05"/></route>
+    <route src="host1" dst="host2"><link_ctn id="link12"/></route>
+    <route src="host1" dst="host3"><link_ctn id="link13"/></route>
+    <route src="host2" dst="host3"><link_ctn id="link23"/></route>
+    <route src="host2" dst="host8"><link_ctn id="link28"/></route>
+    <route src="host3" dst="host4"><link_ctn id="link34"/></route>
+    <route src="host3" dst="host8"><link_ctn id="link38"/></route>
+    <route src="host4" dst="host5"><link_ctn id="link45"/></route>
+    <route src="host4" dst="host6"><link_ctn id="link46"/></route>
+    <route src="host4" dst="host7"><link_ctn id="link47"/></route>
+    <route src="host4" dst="host8"><link_ctn id="link48"/></route>
+    <route src="host5" dst="host6"><link_ctn id="link56"/></route>
+    <route src="host6" dst="host7"><link_ctn id="link67"/></route>
+    <route src="host7" dst="host8"><link_ctn id="link78"/></route>
+    <route src="host7" dst="host9"><link_ctn id="link79"/></route>
+    <route src="host8" dst="host9"><link_ctn id="link89"/></route>
+  </zone>
+</platform>
