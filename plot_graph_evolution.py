@@ -58,7 +58,7 @@ def update(frame):
     f_awakened_by = 0
 
     #print(frame)
-    timestamp, id, message, desc = graph_states_filtered[frame]
+    timestamp, id, message, desc = graph_states[frame]
     #print(f"Timestamp: {timestamp}, id: {id}, message: {message}, desc: {desc}")
 
     if message == "SELF-AWAKENED":
@@ -132,17 +132,9 @@ if __name__=='__main__':
     #for graph_state in graph_states:
         #print(graph_state)
 
-    # Filter for only SELF-AWAKENED messages
-    graph_states_filtered = [graph_state for graph_state in graph_states \
-    if graph_state[2] == "SELF-AWAKENED" or graph_state[2].startswith('AWAKENED by') ]
-    
-    #graph_states_filtered = filter(lambda x: x[2] == "SELF-AWAKENED", graph_states)
-    #for graph_state in graph_states_filtered:
-        #print(graph_state)
-    
     fig = plt.gcf()
     fig.set_size_inches(19.2, 10.8)
-    framesCount = len(graph_states_filtered)
+    framesCount = len(graph_states)
     print(f"No. of frames: {framesCount}")
     animation = FuncAnimation(fig, update, frames=framesCount, interval=1000, init_func=init_func)
 

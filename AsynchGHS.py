@@ -6,6 +6,7 @@ from dataclasses import dataclass
 
 class MessageType(Enum):
   CONNECT = 0
+  INITIATE = 1
 
 class NodeState(Enum):
   SLEEPING = 0

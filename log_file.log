@@ -1,39 +1,39 @@
 [0.000000] [xbt_cfg/INFO] Configuration change: Set 'contexts/factory' to 'thread'
-[15.000000] [host1] [SELF-AWAKENED] (Did 15 flops, more than 11 flop limit!)
-[15.000000] [host1] [CONNECT] (1 -> 0)
-[17.000000] [host0] [AWAKENED by 1] (Did 17 flops, less than 30 flop limit!)
-[17.000000] [host0] [CONNECT] (0 -> 5)
-[17.000000] [host0] [CONNECT] (0 <- 1)
-[17.000000] [host0] TODO
-[23.000000] [host9] [SELF-AWAKENED] (Did 23 flops, more than 22 flop limit!)
-[23.000000] [host9] [CONNECT] (9 -> 8)
-[24.000000] [host2] [SELF-AWAKENED] (Did 24 flops, more than 21 flop limit!)
-[24.000000] [host5] [AWAKENED by 0] (Did 24 flops, less than 31 flop limit!)
-[24.000000] [host2] [CONNECT] (2 -> 3)
-[24.000000] [host5] [CONNECT] (5 -> 4)
-[24.000000] [host5] [CONNECT] (5 <- 0)
-[24.000000] [host5] TODO
-[26.000000] [host8] [AWAKENED by 9] (Did 26 flops, less than 34 flop limit!)
-[26.000000] [host8] [CONNECT] (8 -> 3)
-[26.000000] [host8] [CONNECT] (8 <- 9)
-[26.000000] [host8] TODO
-[29.000000] [host3] [AWAKENED by 2] (Did 29 flops, less than 34 flop limit!)
-[29.000000] [host3] [CONNECT] (3 -> 8)
-[29.000000] [host3] [CONNECT] (3 <- 2)
-[29.000000] [host3] TODO
-[31.000000] [host4] [SELF-AWAKENED] (Did 31 flops, more than 28 flop limit!)
-[31.000000] [host4] [CONNECT] (4 -> 5)
-[31.000000] [host4] [CONNECT] (4 <- 5)
-[34.000000] [host5] [CONNECT] (5 <- 4)
-[35.000000] [host8] [CONNECT] (8 <- 3)
-[38.000000] [host7] [SELF-AWAKENED] (Did 38 flops, more than 36 flop limit!)
-[38.000000] [host3] [CONNECT] (3 <- 8)
-[38.000000] [host7] [CONNECT] (7 -> 4)
-[40.000000] [host4] [CONNECT] (4 <- 7)
-[40.000000] [host4] TODO
-[53.000000] [host6] [SELF-AWAKENED] (Did 53 flops, more than 45 flop limit!)
-[53.000000] [host6] [CONNECT] (6 -> 4)
-[61.000000] [host4] [CONNECT] (4 <- 6)
-[61.000000] [host4] TODO
+[13.000000] [host7] [SELF-AWAKENED] (Did 13 flops, more than 10 flop limit!)
+[13.000000] [host7] [CONNECT] (7 -> 4)
+[14.000000] [host2] [SELF-AWAKENED] (Did 14 flops, more than 11 flop limit!)
+[14.000000] [host2] [CONNECT] (2 -> 3)
+[20.000000] [host3] [AWAKENED by 2] (Did 20 flops, less than 37 flop limit!)
+[20.000000] [host3] [CONNECT] (3 -> 8)
+[20.000000] [host3] [CONNECT] (3 <- 2)
+[20.000000] [host3] TODO
+[21.000000] [host6] [SELF-AWAKENED] (Did 21 flops, more than 16 flop limit!)
+[21.000000] [host4] [AWAKENED by 7] (Did 21 flops, less than 35 flop limit!)
+[21.000000] [host6] [CONNECT] (6 -> 4)
+[21.000000] [host4] [CONNECT] (4 -> 5)
+[21.000000] [host4] [CONNECT] (4 <- 7)
+[21.000000] [host4] TODO
+[25.000000] [host5] [AWAKENED by 4] (Did 25 flops, less than 34 flop limit!)
+[25.000000] [host8] [AWAKENED by 3] (Did 25 flops, less than 45 flop limit!)
+[25.000000] [host5] [CONNECT] (5 -> 4)
+[25.000000] [host5] [CONNECT] (5 <- 4)
+[25.000000] [host8] [CONNECT] (8 -> 3)
+[25.000000] [host8] [CONNECT] (8 <- 3)
+[27.000000] [host0] [SELF-AWAKENED] (Did 27 flops, more than 25 flop limit!)
+[27.000000] [host0] [CONNECT] (0 -> 5)
+[28.000000] [host4] [CONNECT] (4 <- 6)
+[28.000000] [host4] TODO
+[29.000000] [host3] [CONNECT] (3 <- 8)
+[33.000000] [host9] [SELF-AWAKENED] (Did 33 flops, more than 30 flop limit!)
+[33.000000] [host1] [SELF-AWAKENED] (Did 33 flops, more than 32 flop limit!)
+[33.000000] [host5] [CONNECT] (5 <- 0)
+[33.000000] [host5] TODO
+[33.000000] [host9] [CONNECT] (9 -> 8)
+[33.000000] [host1] [CONNECT] (1 -> 0)
+[37.000000] [host0] [CONNECT] (0 <- 1)
+[37.000000] [host0] TODO
+[38.000000] [host4] [CONNECT] (4 <- 5)
+[43.000000] [host8] [CONNECT] (8 <- 9)
+[43.000000] [host8] TODO
 [200.000000] [] Simulation is over
 Segmentation fault.
