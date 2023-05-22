@@ -3,8 +3,31 @@ import networkx as nx
 from matplotlib.animation import FuncAnimation
 import pickle
 import re
+from enum import Enum
 
 awaken = []
+fragments = []
+
+class Color(Enum):
+    SLEEP = "#808080"
+    AWAKEN = "#008000"
+        #AWAKENED_BY = "#FFFF00"
+    EDGE_OFF = "#000000"
+    EDGE_ON = "#FF7F50"
+    F_1 = "#F51313"
+    F_2 = "#0000FF"
+    F_3 = "#00FFFF"
+    F_4 = "#FF00FF"
+    F_5 = "#800000"
+    F_6 = "#808000"
+    F_7 = "#008080"
+    F_8 = "#800080"
+    F_9 = "#00008"
+    F_10 = "#FFFACD"
+
+def getColorByFragmentNo(fragmentNo):
+    color = "Color.F_" + str(fragmentNo)
+    return color
 
 def extract_vars(line):
     pattern = r"\[(\d+\.\d+)\] \[host(\d+)] \[(.*?)\] \((.*)\)"
@@ -33,6 +56,7 @@ def load_graph(file_path):
     G = nx.Graph()
 
     nodes = []
+    edges = []
     # Read the file
     with open(file_path, 'r') as file:
         for line in file:
@@ -43,11 +67,12 @@ def load_graph(file_path):
 
             # Add an edge with the specified weight
             G.add_edge(node1, node2, weight=weight)
+            edges.append(edges)
 
     nodes = list(set(nodes))
     pos = nx.spring_layout(G, seed = 100)
 
-    return G, pos, nodes
+    return G, pos, nodes, edges
 
 # Function to update the plot for each frame
 def update(frame):
@@ -56,10 +81,10 @@ def update(frame):
     f_self_awakened = 0
     sNode_awakened_by = -1
     f_awakened_by = 0
+    f_connect_to = 0
+    f_initiate_to = 0
 
-    #print(frame)
     timestamp, id, message, desc = graph_states[frame]
-    #print(f"Timestamp: {timestamp}, id: {id}, message: {message}, desc: {desc}")
 
     if message == "SELF-AWAKENED":
         f_self_awakened = 1
@@ -70,7 +95,20 @@ def update(frame):
         match = re.match(pattern, message)
         if match:
             sNode_awakened_by = int(match.group(1))
-
+    elif message.startswith('CONNECT to '):
+        f_connect_to = 1
+        dNode_connect_to = -1
+        pattern = r"CONNECT to (\d+)"
+        match = re.match(pattern, message)
+        if match:
+            dNode_connect_to = int(match.group(1))
+    elif message.startswith('INITIATE to '):
+        f_initiate_to = 1
+        dNode_initiate_to = -1
+        pattern = r"INITIATE to (\d+)"
+        match = re.match(pattern, message)
+        if match:
+            dNode_initiate_to = int(match.group(1))
 
     labels = {}
     color_map = []
@@ -79,16 +117,33 @@ def update(frame):
         if (f_self_awakened == 1 or f_awakened_by == 1) and str(node) == str(id):
             awaken.append(node)
         if node in awaken:
-            color = "green"
+            color = Color.AWAKEN.value
         else:
-            color = "0.75"
-        if f_awakened_by == 1 and sNode_awakened_by != -1 and sNode_awakened_by == node:
-            color = "yellow"
+            color = Color.SLEEP.value
+        #if f_awakened_by == 1 and sNode_awakened_by != -1 and sNode_awakened_by == node:
+            #color = Color.AWAKENED_BY.value
         G.nodes[node]["color"] = color
+
+    edges = G.edges()
+    for u, v in edges:
+        if f_connect_to == 1 and dNode_connect_to != -1:
+            if id < dNode_connect_to:
+                G[id][dNode_connect_to]["color"] = Color.EDGE_ON.value
+            else:
+                G[dNode_connect_to][id]["color"] = Color.EDGE_ON.value
+
+        elif f_initiate_to == 1 and dNode_initiate_to != -1:
+            if id < dNode_initiate_to:
+                G[id][dNode_initiate_to]["color"] = Color.EDGE_ON.value
+            else:
+                G[dNode_initiate_to][id]["color"] = Color.EDGE_ON.value
+
+        else:    
+            G[u][v]["color"] = Color.EDGE_OFF.value
 
     nx.draw_networkx_nodes(G, pos, node_size=2000, node_color=[G.nodes[node]["color"] for node in G])
     nx.draw_networkx_labels(G, pos, labels, font_size=20, font_family='sans-serif')
-    nx.draw_networkx_edges(G, pos, width = 3)
+    nx.draw_networkx_edges(G, pos, edge_color=[G[u][v]["color"] for u,v in edges], width = 3)
     edge_weights = nx.get_edge_attributes(G, 'weight')
     nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_weights, font_size=14)
 
@@ -97,7 +152,8 @@ def update(frame):
     figure.set_size_inches(19.2, 10.8)
     
     # Show the timestamp as the title of the plot
-    plt.title(f"Time: {timestamp}s, node: {id}, message: {message}, desc: {desc}")
+    plt.title(f"Time: {timestamp}s, node: {id}, message: {message}, desc: {desc}", fontsize=20)
+
     #print("")
 
 def init_func():
@@ -105,8 +161,8 @@ def init_func():
 
 if __name__=='__main__':
     # Create graph
-    graph_edges_file = 'graph.txt'
-    G, pos, nodes = load_graph(graph_edges_file)
+    graph_edges_file = 'in/graph.txt'
+    G, pos, nodes, edges = load_graph(graph_edges_file)
 
     # Create config for initial graph plot
     edge_weights = nx.get_edge_attributes(G, 'weight')
@@ -120,12 +176,12 @@ if __name__=='__main__':
     plt.axis('off')
     figure = plt.gcf()
     figure.set_size_inches(19.2, 10.8)
-    plt.savefig('images/graph_initial_state.png')
+    plt.savefig('out/graph_initial_state.png')
     plt.clf()
 
 
     # Read graph evolution from log
-    log_file = 'log_file.log'
+    log_file = 'out/log_file.log'
     graph_states = read_log_file(log_file)
 
     # Plot graph evolution
@@ -138,9 +194,9 @@ if __name__=='__main__':
     print(f"No. of frames: {framesCount}")
     animation = FuncAnimation(fig, update, frames=framesCount, interval=1000, init_func=init_func)
 
-    output_file = 'images/graph_evolution.mp4'
+    output_file = 'out/graph_evolution.mp4'
     animation.save(output_file, writer='ffmpeg')
-    #output_file = 'images/graph_evolution.gif'
+    #output_file = 'out/graph_evolution.gif'
     #animation.save(output_file, writer='ffmpeg')
 
     plt.clf()
@@ -159,5 +215,5 @@ if __name__=='__main__':
     plt.axis('off')
     figure = plt.gcf()
     figure.set_size_inches(19.2, 10.8)
-    plt.savefig('images/graph_MST_verification.png')
+    plt.savefig('out/graph_MST_verification.png')
     plt.clf()
