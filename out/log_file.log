@@ -1,39 +1,642 @@
 [0.000000] [xbt_cfg/INFO] Configuration change: Set 'contexts/factory' to 'thread'
-[10.000000] [host7] [SELF-AWAKENED] (Did 10 flops, more or equal than 8 flop limit!)
-[10.000000] [host8] [SELF-AWAKENED] (Did 10 flops, more or equal than 10 flop limit!)
-[10.000000] [host7] [CONNECT to 4] (7 -- Connect --> 4, msg: {Level = 0})
-[10.000000] [host8] [CONNECT to 3] (8 -- Connect --> 3, msg: {Level = 0})
-[23.000000] [host4] [AWAKENED by 7] (Did 23 flops, less than 25 flop limit!)
-[23.000000] [host4] [CONNECT to 5] (4 -- Connect --> 5, msg: {Level = 0})
-[23.000000] [host4] [CONNECT from 7] (4 <-- Connect -- 7, msg: {Level = 0})
-[24.000000] [host1] [SELF-AWAKENED] (Did 24 flops, more or equal than 20 flop limit!)
-[24.000000] [host1] [CONNECT to 0] (1 -- Connect --> 0, msg: {Level = 0})
-[25.000000] [host3] [AWAKENED by 8] (Did 25 flops, less than 36 flop limit!)
-[25.000000] [host3] [CONNECT to 8] (3 -- Connect --> 8, msg: {Level = 0})
-[25.000000] [host3] [CONNECT from 8] (3 <-- Connect -- 8, msg: {Level = 0})
-[25.000000] [host3] [INITIATE to 8] (3 -- Initiate --> 8, msg: {Level = 1, FragmentId = 4, State = NodeState.FIND})
-[40.000000] [host2] [SELF-AWAKENED] (Did 40 flops, more or equal than 38 flop limit!)
-[40.000000] [host2] [CONNECT to 3] (2 -- Connect --> 3, msg: {Level = 0})
-[42.000000] [host0] [SELF-AWAKENED] (Did 42 flops, more or equal than 41 flop limit!)
-[42.000000] [host9] [SELF-AWAKENED] (Did 42 flops, more or equal than 41 flop limit!)
-[42.000000] [host0] [CONNECT to 5] (0 -- Connect --> 5, msg: {Level = 0})
-[42.000000] [host9] [CONNECT to 8] (9 -- Connect --> 8, msg: {Level = 0})
-[42.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1, msg: {Level = 0})
-[45.000000] [host8] [CONNECT from 3] (8 <-- Connect -- 3, msg: {Level = 0})
-[45.000000] [host8] [INITIATE to 3] (8 -- Initiate --> 3, msg: {Level = 1, FragmentId = 4, State = NodeState.FIND})
-[46.000000] [host5] [SELF-AWAKENED] (Did 46 flops, more or equal than 40 flop limit!)
-[46.000000] [host5] [CONNECT to 4] (5 -- Connect --> 4, msg: {Level = 0})
-[48.000000] [host6] [SELF-AWAKENED] (Did 48 flops, more or equal than 45 flop limit!)
-[48.000000] [host6] [CONNECT to 4] (6 -- Connect --> 4, msg: {Level = 0})
-[55.000000] [host3] [CONNECT from 2] (3 <-- Connect -- 2, msg: {Level = 0})
-[64.000000] [host8] [INITIATE from 3] (8 <-- Initiate -- 3, msg: {Level = 1, FragmentId = 4, State = NodeState.FIND})
-[71.000000] [host8] [CONNECT from 9] (8 <-- Connect -- 9, msg: {Level = 0})
-[74.000000] [host3] [INITIATE from 8] (3 <-- Initiate -- 8, msg: {Level = 1, FragmentId = 4, State = NodeState.FIND})
-[106.000000] [host5] [CONNECT from 4] (5 <-- Connect -- 4, msg: {Level = 0})
-[106.000000] [host5] [INITIATE to 4] (5 -- Initiate --> 4, msg: {Level = 1, FragmentId = 1, State = NodeState.FIND})
-[132.000000] [host5] [CONNECT from 0] (5 <-- Connect -- 0, msg: {Level = 0})
-[134.000000] [host4] [CONNECT from 5] (4 <-- Connect -- 5, msg: {Level = 0})
-[134.000000] [host4] [INITIATE to 5] (4 -- Initiate --> 5, msg: {Level = 1, FragmentId = 1, State = NodeState.FIND})
-[144.000000] [host4] [CONNECT from 6] (4 <-- Connect -- 6, msg: {Level = 0})
-[200.000000] [] Simulation is over
-Segmentation fault.
+[14.000000] [host2] [SELF-AWAKENED] (Did 14 flops, more or equal than 14 flop limit!) : {}
+[14.000000] [host2] [BRANCH to 3] () : {}
+[14.000000] [host8] [SELF-AWAKENED] (Did 14 flops, more or equal than 11 flop limit!) : {}
+[14.000000] [host8] [BRANCH to 3] () : {}
+[14.000000] [host6] [SELF-AWAKENED] (Did 14 flops, more or equal than 14 flop limit!) : {}
+[14.000000] [host6] [BRANCH to 4] () : {}
+[14.000000] [host2] [CONNECT to 3] (2 -- Connect --> 3) : {Level = 0}
+[14.000000] [host8] [CONNECT to 3] (8 -- Connect --> 3) : {Level = 0}
+[14.000000] [host6] [CONNECT to 4] (6 -- Connect --> 4) : {Level = 0}
+[17.000000] [host4] [SELF-AWAKENED] (Did 17 flops, more or equal than 15 flop limit!) : {}
+[17.000000] [host4] [BRANCH to 5] () : {}
+[17.000000] [host4] [CONNECT to 5] (4 -- Connect --> 5) : {Level = 0}
+[18.000000] [host7] [SELF-AWAKENED] (Did 18 flops, more or equal than 13 flop limit!) : {}
+[18.000000] [host7] [BRANCH to 4] () : {}
+[18.000000] [host7] [CONNECT to 4] (7 -- Connect --> 4) : {Level = 0}
+[24.000000] [host3] [AWAKENED by 2] (Did 24 flops, less than 30 flop limit!) : {}
+[24.000000] [host3] [BRANCH to 8] () : {}
+[24.000000] [host3] [CONNECT to 8] (3 -- Connect --> 8) : {Level = 0}
+[24.000000] [host3] [CONNECT from 2] (3 <-- Connect -- 2) : {Level = 0}
+[24.000000] [host3] [Place received CONNECT message from 2 at the end of queue!] () : {}
+[26.000000] [host0] [SELF-AWAKENED] (Did 26 flops, more or equal than 24 flop limit!) : {}
+[26.000000] [host0] [BRANCH to 5] () : {}
+[26.000000] [host0] [CONNECT to 5] (0 -- Connect --> 5) : {Level = 0}
+[27.000000] [host4] [CONNECT from 6] (4 <-- Connect -- 6) : {Level = 0}
+[27.000000] [host4] [Place received CONNECT message from 6 at the end of queue!] () : {}
+[30.000000] [host9] [SELF-AWAKENED] (Did 30 flops, more or equal than 28 flop limit!) : {}
+[30.000000] [host9] [BRANCH to 8] () : {}
+[30.000000] [host9] [CONNECT to 8] (9 -- Connect --> 8) : {Level = 0}
+[40.000000] [host1] [SELF-AWAKENED] (Did 40 flops, more or equal than 32 flop limit!) : {}
+[40.000000] [host1] [BRANCH to 0] () : {}
+[40.000000] [host1] [CONNECT to 0] (1 -- Connect --> 0) : {Level = 0}
+[46.000000] [host4] [CONNECT from 7] (4 <-- Connect -- 7) : {Level = 0}
+[46.000000] [host4] [Place received CONNECT message from 7 at the end of queue!] () : {}
+[50.000000] [host5] [SELF-AWAKENED] (Did 50 flops, more or equal than 49 flop limit!) : {}
+[50.000000] [host5] [BRANCH to 4] () : {}
+[50.000000] [host3] [CONNECT from 8] (3 <-- Connect -- 8) : {Level = 0}
+[50.000000] [host5] [CONNECT to 4] (5 -- Connect --> 4) : {Level = 0}
+[50.000000] [host3] [INITIATE to 8] (3 -- Initiate --> 8) : {Level = 1, Fragment id = 4, State = NodeState.FIND}
+[52.000000] [host4] [CONNECT from 6] (4 <-- Connect -- 6) : {Level = 0}
+[52.000000] [host4] [Place received CONNECT message from 6 at the end of queue!] () : {}
+[53.000000] [host4] [CONNECT from 7] (4 <-- Connect -- 7) : {Level = 0}
+[53.000000] [host4] [Place received CONNECT message from 7 at the end of queue!] () : {}
+[54.000000] [host8] [CONNECT from 3] (8 <-- Connect -- 3) : {Level = 0}
+[54.000000] [host8] [INITIATE to 3] (8 -- Initiate --> 3) : {Level = 1, Fragment id = 4, State = NodeState.FIND}
+[59.000000] [host3] [CONNECT from 2] (3 <-- Connect -- 2) : {Level = 0}
+[59.000000] [host3] [Place received CONNECT message from 2 at the end of queue!] () : {}
+[60.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[60.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[61.000000] [host8] [CONNECT from 9] (8 <-- Connect -- 9) : {Level = 0}
+[61.000000] [host8] [Place received CONNECT message from 9 at the end of queue!] () : {}
+[67.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[67.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[77.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[77.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[82.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[82.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[83.000000] [host3] [INITIATE from 8] (3 <-- Initiate -- 8) : {Level = 1, Fragment id = 4, State = NodeState.FIND}
+[83.000000] [host3] Basic adjacent edges nr: 3
+[83.000000] [host3] Min Basic adjacent edge: Edge(dNode=2, weight=8, state=<EdgeState.BASIC: 0>)
+[83.000000] [host3] [TEST to 2] (3 -- Test --> 2) : {Level = 1, Fragment id = 4}
+[84.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[84.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[85.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[85.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[86.000000] [host3] [CONNECT from 2] (3 <-- Connect -- 2) : {Level = 0}
+[86.000000] [host3] [BRANCH to 2] () : {}
+[86.000000] [host3] [INITIATE to 2] (3 -- Initiate --> 2) : {Level = 1, Fragment id = 4, State = NodeState.FIND}
+[90.000000] [host8] [INITIATE from 3] (8 <-- Initiate -- 3) : {Level = 1, Fragment id = 4, State = NodeState.FIND}
+[90.000000] [host8] Basic adjacent edges nr: 4
+[90.000000] [host8] Min Basic adjacent edge: Edge(dNode=9, weight=9, state=<EdgeState.BASIC: 0>)
+[90.000000] [host8] [TEST to 9] (8 -- Test --> 9) : {Level = 1, Fragment id = 4}
+[92.000000] [host5] [CONNECT from 4] (5 <-- Connect -- 4) : {Level = 0}
+[92.000000] [host5] [INITIATE to 4] (5 -- Initiate --> 4) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[95.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[95.000000] [host2] [TEST from 3] (2 <-- Test -- 3) : {Level = 1, Fragment id = 4}
+[95.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[95.000000] [host2] [Place received TEST message from 3 at the end of queue!] () : {}
+[97.000000] [host9] [TEST from 8] (9 <-- Test -- 8) : {Level = 1, Fragment id = 4}
+[97.000000] [host9] [Place received TEST message from 8 at the end of queue!] () : {}
+[99.000000] [host8] [CONNECT from 9] (8 <-- Connect -- 9) : {Level = 0}
+[99.000000] [host8] [BRANCH to 9] () : {}
+[99.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[99.000000] [host8] [INITIATE to 9] (8 -- Initiate --> 9) : {Level = 1, Fragment id = 4, State = NodeState.FIND}
+[99.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[104.000000] [host9] [TEST from 8] (9 <-- Test -- 8) : {Level = 1, Fragment id = 4}
+[104.000000] [host2] [INITIATE from 3] (2 <-- Initiate -- 3) : {Level = 1, Fragment id = 4, State = NodeState.FIND}
+[104.000000] [host2] Basic adjacent edges nr: 2
+[104.000000] [host2] Min Basic adjacent edge: Edge(dNode=1, weight=17, state=<EdgeState.BASIC: 0>)
+[104.000000] [host9] [Place received TEST message from 8 at the end of queue!] () : {}
+[104.000000] [host2] [TEST to 1] (2 -- Test --> 1) : {Level = 1, Fragment id = 4}
+[106.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[106.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[110.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[110.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[112.000000] [host9] [INITIATE from 8] (9 <-- Initiate -- 8) : {Level = 1, Fragment id = 4, State = NodeState.FIND}
+[112.000000] [host9] Basic adjacent edges nr: 1
+[112.000000] [host9] Min Basic adjacent edge: Edge(dNode=7, weight=13, state=<EdgeState.BASIC: 0>)
+[112.000000] [host9] [TEST to 7] (9 -- Test --> 7) : {Level = 1, Fragment id = 4}
+[114.000000] [host2] [TEST from 3] (2 <-- Test -- 3) : {Level = 1, Fragment id = 4}
+[114.000000] [host2] [REJECT to 3] (2 -- Reject --> 3) : {}
+[115.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[115.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[116.000000] [host9] [TEST from 8] (9 <-- Test -- 8) : {Level = 1, Fragment id = 4}
+[116.000000] [host9] [REJECT to 8] (9 -- Reject --> 8) : {}
+[118.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[118.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[119.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[119.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[121.000000] [host3] [REJECT from 2] (3 <-- Reject -- 2) : {}
+[121.000000] [host3] Basic adjacent edges nr: 2
+[121.000000] [host3] Min Basic adjacent edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>)
+[121.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[121.000000] [host3] [TEST to 4] (3 -- Test --> 4) : {Level = 1, Fragment id = 4}
+[121.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[122.000000] [host8] [REJECT from 9] (8 <-- Reject -- 9) : {}
+[122.000000] [host8] Basic adjacent edges nr: 3
+[122.000000] [host8] Min Basic adjacent edge: Edge(dNode=4, weight=10, state=<EdgeState.BASIC: 0>)
+[122.000000] [host8] [TEST to 4] (8 -- Test --> 4) : {Level = 1, Fragment id = 4}
+[123.000000] [host4] [CONNECT from 5] (4 <-- Connect -- 5) : {Level = 0}
+[123.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[123.000000] [host4] [INITIATE to 5] (4 -- Initiate --> 5) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[123.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[124.000000] [host4] [CONNECT from 6] (4 <-- Connect -- 6) : {Level = 0}
+[124.000000] [host4] [Place received CONNECT message from 6 at the end of queue!] () : {}
+[125.000000] [host5] [CONNECT from 0] (5 <-- Connect -- 0) : {Level = 0}
+[125.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[125.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[125.000000] [host5] [Place received CONNECT message from 0 at the end of queue!] () : {}
+[125.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[125.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[126.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[126.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[127.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[127.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[128.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[128.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[131.000000] [host4] [CONNECT from 7] (4 <-- Connect -- 7) : {Level = 0}
+[131.000000] [host4] [Place received CONNECT message from 7 at the end of queue!] () : {}
+[134.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[134.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[134.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[134.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[136.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[136.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[143.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[143.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[143.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[143.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[144.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[144.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[147.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[147.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[151.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[151.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[152.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[152.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[153.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[153.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[154.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[154.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[155.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[155.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[155.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[155.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[158.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[158.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[159.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[159.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[161.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[161.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[164.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[164.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[166.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[166.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[166.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[166.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[171.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[171.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[172.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[172.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[174.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[174.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[179.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[179.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[181.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[181.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[182.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[182.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[184.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[184.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[184.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[184.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[187.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[187.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[189.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[189.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[190.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[190.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[191.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[191.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[193.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[193.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[194.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[194.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[198.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[198.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[198.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[198.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[199.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[199.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[200.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[200.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[201.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[201.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[204.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[204.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[204.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[204.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[205.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[205.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[208.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[208.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[208.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[208.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[211.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[211.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[212.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[212.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[214.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[214.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[217.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[217.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[220.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[220.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[223.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[223.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[226.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[226.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[227.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[227.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[227.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[227.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[229.000000] [host5] [INITIATE from 4] (5 <-- Initiate -- 4) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[229.000000] [host5] Basic adjacent edges nr: 2
+[229.000000] [host5] Min Basic adjacent edge: Edge(dNode=0, weight=2, state=<EdgeState.BASIC: 0>)
+[229.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[229.000000] [host5] [TEST to 0] (5 -- Test --> 0) : {Level = 1, Fragment id = 1}
+[229.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[230.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[230.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[232.000000] [host4] [INITIATE from 5] (4 <-- Initiate -- 5) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[232.000000] [host4] Basic adjacent edges nr: 4
+[232.000000] [host4] Min Basic adjacent edge: Edge(dNode=7, weight=5, state=<EdgeState.BASIC: 0>)
+[232.000000] [host5] [CONNECT from 0] (5 <-- Connect -- 0) : {Level = 0}
+[232.000000] [host5] [BRANCH to 0] () : {}
+[232.000000] [host4] [TEST to 7] (4 -- Test --> 7) : {Level = 1, Fragment id = 1}
+[232.000000] [host5] [INITIATE to 0] (5 -- Initiate --> 0) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[234.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[234.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[237.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[237.000000] [host4] [TEST from 3] (4 <-- Test -- 3) : {Level = 1, Fragment id = 4}
+[237.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[237.000000] [host4] [ACCEPT to 3] (4 -- Accept --> 3) : {}
+[243.000000] [host4] [TEST from 8] (4 <-- Test -- 8) : {Level = 1, Fragment id = 4}
+[243.000000] [host4] [ACCEPT to 8] (4 -- Accept --> 8) : {}
+[246.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[246.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[248.000000] [host3] [ACCEPT from 4] (3 <-- Accept -- 4) : {}
+[250.000000] [host7] [TEST from 4] (7 <-- Test -- 4) : {Level = 1, Fragment id = 1}
+[250.000000] [host7] [Place received TEST message from 4 at the end of queue!] () : {}
+[252.000000] [host4] [CONNECT from 6] (4 <-- Connect -- 6) : {Level = 0}
+[252.000000] [host4] [BRANCH to 6] () : {}
+[252.000000] [host4] [INITIATE to 6] (4 -- Initiate --> 6) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[254.000000] [host8] [ACCEPT from 4] (8 <-- Accept -- 4) : {}
+[254.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[254.000000] [host4] [CONNECT from 7] (4 <-- Connect -- 7) : {Level = 0}
+[254.000000] [host4] [BRANCH to 7] () : {}
+[254.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[254.000000] [host4] [INITIATE to 7] (4 -- Initiate --> 7) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[256.000000] [host0] [TEST from 5] (0 <-- Test -- 5) : {Level = 1, Fragment id = 1}
+[256.000000] [host0] [Place received TEST message from 5 at the end of queue!] () : {}
+[257.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[257.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[257.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[257.000000] [host0] [Place received CONNECT message from 1 at the end of queue!] () : {}
+[260.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[260.000000] [host7] [Place received TEST message from 9 at the end of queue!] () : {}
+[265.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[265.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[268.000000] [host6] [INITIATE from 4] (6 <-- Initiate -- 4) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[268.000000] [host6] Basic adjacent edges nr: 2
+[268.000000] [host6] Min Basic adjacent edge: Edge(dNode=5, weight=7, state=<EdgeState.BASIC: 0>)
+[268.000000] [host6] [TEST to 5] (6 -- Test --> 5) : {Level = 1, Fragment id = 1}
+[269.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[269.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[270.000000] [host7] [TEST from 4] (7 <-- Test -- 4) : {Level = 1, Fragment id = 1}
+[270.000000] [host7] [Place received TEST message from 4 at the end of queue!] () : {}
+[271.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[271.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[272.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[272.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[277.000000] [host5] [TEST from 6] (5 <-- Test -- 6) : {Level = 1, Fragment id = 1}
+[277.000000] [host5] [REJECTED to 6] () : {}
+[277.000000] [host5] [REJECT to 6] (5 -- Reject --> 6) : {}
+[280.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[280.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[282.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[282.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[285.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[285.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[286.000000] [host6] [REJECT from 5] (6 <-- Reject -- 5) : {}
+[286.000000] [host6] [REJECTED to 5] () : {}
+[286.000000] [host6] Basic adjacent edges nr: 1
+[286.000000] [host6] Min Basic adjacent edge: Edge(dNode=7, weight=15, state=<EdgeState.BASIC: 0>)
+[286.000000] [host6] [TEST to 7] (6 -- Test --> 7) : {Level = 1, Fragment id = 1}
+[287.000000] [host0] [INITIATE from 5] (0 <-- Initiate -- 5) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[287.000000] [host0] Basic adjacent edges nr: 1
+[287.000000] [host0] Min Basic adjacent edge: Edge(dNode=1, weight=3, state=<EdgeState.BASIC: 0>)
+[287.000000] [host7] [INITIATE from 4] (7 <-- Initiate -- 4) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[287.000000] [host7] Basic adjacent edges nr: 3
+[287.000000] [host7] Min Basic adjacent edge: Edge(dNode=8, weight=12, state=<EdgeState.BASIC: 0>)
+[287.000000] [host0] [TEST to 1] (0 -- Test --> 1) : {Level = 1, Fragment id = 1}
+[287.000000] [host7] [TEST to 8] (7 -- Test --> 8) : {Level = 1, Fragment id = 1}
+[289.000000] [host0] [TEST from 5] (0 <-- Test -- 5) : {Level = 1, Fragment id = 1}
+[289.000000] [host0] [REJECT to 5] (0 -- Reject --> 5) : {}
+[291.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[291.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 1, Fragment id = 4}
+[291.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[291.000000] [host7] [ACCEPT to 9] (7 -- Accept --> 9) : {}
+[292.000000] [host8] [TEST from 7] (8 <-- Test -- 7) : {Level = 1, Fragment id = 1}
+[292.000000] [host8] [ACCEPT to 7] (8 -- Accept --> 7) : {}
+[297.000000] [host9] [ACCEPT from 7] (9 <-- Accept -- 7) : {}
+[297.000000] [host7] [TEST from 4] (7 <-- Test -- 4) : {Level = 1, Fragment id = 1}
+[297.000000] [host9] [REPORT to 8] (9 -- Report --> 8) : {Best weight = 13}
+[297.000000] [host7] [REJECT to 4] (7 -- Reject --> 4) : {}
+[298.000000] [host0] [CONNECT from 1] (0 <-- Connect -- 1) : {Level = 0}
+[298.000000] [host0] [BRANCH to 1] () : {}
+[298.000000] [host0] [INITIATE to 1] (0 -- Initiate --> 1) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[303.000000] [host8] [REPORT from 9] (8 <-- Report -- 9) : {Best weight = 13}
+[303.000000] [host8] Node: 8, Edges: [Edge(dNode=2, weight=18, state=<EdgeState.BASIC: 0>), Edge(dNode=3, weight=4, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=10, state=<EdgeState.BASIC: 0>), Edge(dNode=7, weight=12, state=<EdgeState.BASIC: 0>), Edge(dNode=9, weight=9, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=10, state=<EdgeState.BASIC: 0>), Best weight: 10, Test edge: None, In branch: Edge(dNode=3, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[303.000000] [host8] [REPORT to 3] (8 -- Report --> 3) : {Best weight = 10}
+[307.000000] [host7] [TEST from 6] (7 <-- Test -- 6) : {Level = 1, Fragment id = 1}
+[307.000000] [host7] [REJECTED to 6] () : {}
+[307.000000] [host7] [REJECT to 6] (7 -- Reject --> 6) : {}
+[313.000000] [host6] [REJECT from 7] (6 <-- Reject -- 7) : {}
+[313.000000] [host6] [REJECTED to 7] () : {}
+[313.000000] [host6] Basic adjacent edges nr: 0
+[313.000000] [host1] [TEST from 0] (1 <-- Test -- 0) : {Level = 1, Fragment id = 1}
+[313.000000] [host6] [REPORT to 4] (6 -- Report --> 4) : {Best weight = 100}
+[313.000000] [host1] [Place received TEST message from 0 at the end of queue!] () : {}
+[315.000000] [host4] [REJECT from 7] (4 <-- Reject -- 7) : {}
+[315.000000] [host4] Basic adjacent edges nr: 2
+[315.000000] [host4] Min Basic adjacent edge: Edge(dNode=8, weight=10, state=<EdgeState.BASIC: 0>)
+[315.000000] [host5] [REJECT from 0] (5 <-- Reject -- 0) : {}
+[315.000000] [host5] Basic adjacent edges nr: 0
+[315.000000] [host4] [TEST to 8] (4 -- Test --> 8) : {Level = 1, Fragment id = 1}
+[316.000000] [host7] [ACCEPT from 8] (7 <-- Accept -- 8) : {}
+[316.000000] [host7] [REPORT to 4] (7 -- Report --> 4) : {Best weight = 12}
+[319.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[319.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[319.000000] [host3] [Place received REPORT message from 8 at the end of queue!] () : {}
+[321.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[321.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[323.000000] [host8] [TEST from 4] (8 <-- Test -- 4) : {Level = 1, Fragment id = 1}
+[323.000000] [host8] [ACCEPT to 4] (8 -- Accept --> 4) : {}
+[326.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[326.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[326.000000] [host3] [Place received REPORT message from 8 at the end of queue!] () : {}
+[327.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[327.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[327.000000] [host3] [Place received REPORT message from 8 at the end of queue!] () : {}
+[331.000000] [host4] [REPORT from 6] (4 <-- Report -- 6) : {Best weight = 100}
+[331.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BASIC: 0>)], State: FIND, Fragment id: 1, Level: 1, Best edge: None, Best weight: 100, Test edge: Edge(dNode=8, weight=10, state=<EdgeState.BASIC: 0>), In branch: Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Find Count: 2, Halt: False
+[331.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[331.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[331.000000] [host3] [Place received REPORT message from 8 at the end of queue!] () : {}
+[332.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[332.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[332.000000] [host3] [Place received REPORT message from 8 at the end of queue!] () : {}
+[340.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[340.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[340.000000] [host3] [Place received REPORT message from 8 at the end of queue!] () : {}
+[345.000000] [host1] [INITIATE from 0] (1 <-- Initiate -- 0) : {Level = 1, Fragment id = 1, State = NodeState.FIND}
+[345.000000] [host1] Basic adjacent edges nr: 2
+[345.000000] [host1] Min Basic adjacent edge: Edge(dNode=3, weight=16, state=<EdgeState.BASIC: 0>)
+[345.000000] [host4] [REPORT from 7] (4 <-- Report -- 7) : {Best weight = 12}
+[345.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BASIC: 0>)], State: FIND, Fragment id: 1, Level: 1, Best edge: None, Best weight: 100, Test edge: Edge(dNode=8, weight=10, state=<EdgeState.BASIC: 0>), In branch: Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[345.000000] [host1] [TEST to 3] (1 -- Test --> 3) : {Level = 1, Fragment id = 1}
+[349.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[349.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[349.000000] [host3] [Place received REPORT message from 8 at the end of queue!] () : {}
+[353.000000] [host4] [ACCEPT from 8] (4 <-- Accept -- 8) : {}
+[353.000000] [host4] [REPORT to 5] (4 -- Report --> 5) : {Best weight = 10}
+[355.000000] [host1] [TEST from 0] (1 <-- Test -- 0) : {Level = 1, Fragment id = 1}
+[355.000000] [host1] [REJECT to 0] (1 -- Reject --> 0) : {}
+[357.000000] [host3] [TEST from 1] (3 <-- Test -- 1) : {Level = 1, Fragment id = 1}
+[357.000000] [host3] [ACCEPT to 1] (3 -- Accept --> 1) : {}
+[362.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 1, Fragment id = 4}
+[362.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[362.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[362.000000] [host1] [ACCEPT to 2] (1 -- Accept --> 2) : {}
+[362.000000] [host3] [Place received REPORT message from 8 at the end of queue!] () : {}
+[368.000000] [host1] [ACCEPT from 3] (1 <-- Accept -- 3) : {}
+[368.000000] [host1] [REPORT to 0] (1 -- Report --> 0) : {Best weight = 16}
+[370.000000] [host2] [ACCEPT from 1] (2 <-- Accept -- 1) : {}
+[370.000000] [host2] [REPORT to 3] (2 -- Report --> 3) : {Best weight = 17}
+[372.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[372.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[372.000000] [host3] [Place received REPORT message from 8 at the end of queue!] () : {}
+[375.000000] [host0] [REJECT from 1] (0 <-- Reject -- 1) : {}
+[375.000000] [host0] Basic adjacent edges nr: 0
+[386.000000] [host3] [REPORT from 2] (3 <-- Report -- 2) : {Best weight = 17}
+[386.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[386.000000] [host3] [REPORT to 8] (3 -- Report --> 8) : {Best weight = 11}
+[393.000000] [host3] [REPORT from 8] (3 <-- Report -- 8) : {Best weight = 10}
+[393.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FOUND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>), Best weight: 11, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 0, Halt: False
+[395.000000] [host0] [REPORT from 1] (0 <-- Report -- 1) : {Best weight = 16}
+[395.000000] [host0] Node: 0, Edges: [Edge(dNode=1, weight=3, state=<EdgeState.BRANCH: 1>), Edge(dNode=5, weight=2, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 1, Level: 1, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=5, weight=2, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[395.000000] [host0] [REPORT to 5] (0 -- Report --> 5) : {Best weight = 16}
+[403.000000] [host8] [REPORT from 3] (8 <-- Report -- 3) : {Best weight = 11}
+[403.000000] [host8] Node: 8, Edges: [Edge(dNode=2, weight=18, state=<EdgeState.BASIC: 0>), Edge(dNode=3, weight=4, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=10, state=<EdgeState.BASIC: 0>), Edge(dNode=7, weight=12, state=<EdgeState.BASIC: 0>), Edge(dNode=9, weight=9, state=<EdgeState.BRANCH: 1>)], State: FOUND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=10, state=<EdgeState.BASIC: 0>), Best weight: 10, Test edge: None, In branch: Edge(dNode=3, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 0, Halt: False
+[403.000000] [host8] ChangeRootNode: 8, Edges: [Edge(dNode=2, weight=18, state=<EdgeState.BASIC: 0>), Edge(dNode=3, weight=4, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=10, state=<EdgeState.BASIC: 0>), Edge(dNode=7, weight=12, state=<EdgeState.BASIC: 0>), Edge(dNode=9, weight=9, state=<EdgeState.BRANCH: 1>)], State: FOUND, Fragment id: 4, Level: 1, Best edge: Edge(dNode=4, weight=10, state=<EdgeState.BASIC: 0>), Best weight: 10, Test edge: None, In branch: Edge(dNode=3, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 0, Halt: False
+[403.000000] [host8] [CONNECT to 4] (8 -- Connect --> 4) : {Level = 1}
+[403.000000] [host8] [BRANCH to 4] () : {}
+[408.000000] [host5] [REPORT from 4] (5 <-- Report -- 4) : {Best weight = 10}
+[408.000000] [host5] Node: 5, Edges: [Edge(dNode=0, weight=2, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=7, state=<EdgeState.REJECTED: 2>)], State: FIND, Fragment id: 1, Level: 1, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=4, weight=1, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[408.000000] [host5] [Place received REPORT message from 4 at the end of queue!] () : {}
+[418.000000] [host4] [CONNECT from 8] (4 <-- Connect -- 8) : {Level = 1}
+[418.000000] [host4] [Place received CONNECT message from 8 at the end of queue!] () : {}
+[419.000000] [host4] [CONNECT from 8] (4 <-- Connect -- 8) : {Level = 1}
+[419.000000] [host4] [Place received CONNECT message from 8 at the end of queue!] () : {}
+[422.000000] [host4] [CONNECT from 8] (4 <-- Connect -- 8) : {Level = 1}
+[422.000000] [host4] [Place received CONNECT message from 8 at the end of queue!] () : {}
+[430.000000] [host4] [CONNECT from 8] (4 <-- Connect -- 8) : {Level = 1}
+[430.000000] [host4] [Place received CONNECT message from 8 at the end of queue!] () : {}
+[439.000000] [host4] [CONNECT from 8] (4 <-- Connect -- 8) : {Level = 1}
+[439.000000] [host4] [Place received CONNECT message from 8 at the end of queue!] () : {}
+[441.000000] [host5] [REPORT from 0] (5 <-- Report -- 0) : {Best weight = 16}
+[441.000000] [host5] Node: 5, Edges: [Edge(dNode=0, weight=2, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=7, state=<EdgeState.REJECTED: 2>)], State: FIND, Fragment id: 1, Level: 1, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=4, weight=1, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[441.000000] [host5] [REPORT to 4] (5 -- Report --> 4) : {Best weight = 16}
+[445.000000] [host4] [CONNECT from 8] (4 <-- Connect -- 8) : {Level = 1}
+[445.000000] [host4] [Place received CONNECT message from 8 at the end of queue!] () : {}
+[451.000000] [host5] [REPORT from 4] (5 <-- Report -- 4) : {Best weight = 10}
+[451.000000] [host5] Node: 5, Edges: [Edge(dNode=0, weight=2, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=7, state=<EdgeState.REJECTED: 2>)], State: FOUND, Fragment id: 1, Level: 1, Best edge: Edge(dNode=0, weight=2, state=<EdgeState.BRANCH: 1>), Best weight: 16, Test edge: None, In branch: Edge(dNode=4, weight=1, state=<EdgeState.BRANCH: 1>), Find Count: 0, Halt: False
+[501.000000] [host4] [REPORT from 5] (4 <-- Report -- 5) : {Best weight = 16}
+[501.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BASIC: 0>)], State: FOUND, Fragment id: 1, Level: 1, Best edge: Edge(dNode=8, weight=10, state=<EdgeState.BASIC: 0>), Best weight: 10, Test edge: None, In branch: Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Find Count: 0, Halt: False
+[501.000000] [host4] ChangeRootNode: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BASIC: 0>)], State: FOUND, Fragment id: 1, Level: 1, Best edge: Edge(dNode=8, weight=10, state=<EdgeState.BASIC: 0>), Best weight: 10, Test edge: None, In branch: Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Find Count: 0, Halt: False
+[501.000000] [host4] [CONNECT to 8] (4 -- Connect --> 8) : {Level = 1}
+[501.000000] [host4] [BRANCH to 8] () : {}
+[510.000000] [host4] [CONNECT from 8] (4 <-- Connect -- 8) : {Level = 1}
+[510.000000] [host4] [INITIATE to 8] (4 -- Initiate --> 8) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[512.000000] [host8] [CONNECT from 4] (8 <-- Connect -- 4) : {Level = 1}
+[512.000000] [host8] [INITIATE to 4] (8 -- Initiate --> 4) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[524.000000] [host4] [INITIATE from 8] (4 <-- Initiate -- 8) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[524.000000] [host4] [INITIATE to 5] (4 -- Initiate --> 5) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[524.000000] [host4] [INITIATE to 6] (4 -- Initiate --> 6) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[524.000000] [host4] [INITIATE to 7] (4 -- Initiate --> 7) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[524.000000] [host4] Basic adjacent edges nr: 1
+[524.000000] [host4] Min Basic adjacent edge: Edge(dNode=3, weight=11, state=<EdgeState.BASIC: 0>)
+[524.000000] [host4] [TEST to 3] (4 -- Test --> 3) : {Level = 2, Fragment id = 10}
+[531.000000] [host8] [INITIATE from 4] (8 <-- Initiate -- 4) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[531.000000] [host8] [INITIATE to 3] (8 -- Initiate --> 3) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[531.000000] [host8] [INITIATE to 9] (8 -- Initiate --> 9) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[531.000000] [host8] Basic adjacent edges nr: 2
+[531.000000] [host8] Min Basic adjacent edge: Edge(dNode=7, weight=12, state=<EdgeState.BASIC: 0>)
+[531.000000] [host8] [TEST to 7] (8 -- Test --> 7) : {Level = 2, Fragment id = 10}
+[534.000000] [host3] [TEST from 4] (3 <-- Test -- 4) : {Level = 2, Fragment id = 10}
+[534.000000] [host6] [INITIATE from 4] (6 <-- Initiate -- 4) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[534.000000] [host6] Basic adjacent edges nr: 0
+[534.000000] [host3] [Place received TEST message from 4 at the end of queue!] () : {}
+[534.000000] [host6] [REPORT to 4] (6 -- Report --> 4) : {Best weight = 100}
+[541.000000] [host7] [INITIATE from 4] (7 <-- Initiate -- 4) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[541.000000] [host7] Basic adjacent edges nr: 2
+[541.000000] [host7] Min Basic adjacent edge: Edge(dNode=8, weight=12, state=<EdgeState.BASIC: 0>)
+[541.000000] [host7] [TEST to 8] (7 -- Test --> 8) : {Level = 2, Fragment id = 10}
+[542.000000] [host9] [INITIATE from 8] (9 <-- Initiate -- 8) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[542.000000] [host9] Basic adjacent edges nr: 1
+[542.000000] [host9] Min Basic adjacent edge: Edge(dNode=7, weight=13, state=<EdgeState.BASIC: 0>)
+[542.000000] [host9] [TEST to 7] (9 -- Test --> 7) : {Level = 2, Fragment id = 10}
+[546.000000] [host4] [REPORT from 6] (4 <-- Report -- 6) : {Best weight = 100}
+[546.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.BASIC: 0>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: Edge(dNode=3, weight=11, state=<EdgeState.BASIC: 0>), In branch: Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 3, Halt: False
+[549.000000] [host3] [INITIATE from 8] (3 <-- Initiate -- 8) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[549.000000] [host3] [INITIATE to 2] (3 -- Initiate --> 2) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[549.000000] [host3] Basic adjacent edges nr: 2
+[549.000000] [host3] Min Basic adjacent edge: Edge(dNode=4, weight=11, state=<EdgeState.BASIC: 0>)
+[549.000000] [host3] [TEST to 4] (3 -- Test --> 4) : {Level = 2, Fragment id = 10}
+[550.000000] [host7] [TEST from 8] (7 <-- Test -- 8) : {Level = 2, Fragment id = 10}
+[550.000000] [host7] [REJECTED to 8] () : {}
+[550.000000] [host7] Basic adjacent edges nr: 1
+[550.000000] [host7] Min Basic adjacent edge: Edge(dNode=9, weight=13, state=<EdgeState.BASIC: 0>)
+[550.000000] [host7] [TEST to 9] (7 -- Test --> 9) : {Level = 2, Fragment id = 10}
+[553.000000] [host8] [TEST from 7] (8 <-- Test -- 7) : {Level = 2, Fragment id = 10}
+[553.000000] [host8] [REJECTED to 7] () : {}
+[553.000000] [host8] Basic adjacent edges nr: 1
+[553.000000] [host8] Min Basic adjacent edge: Edge(dNode=2, weight=18, state=<EdgeState.BASIC: 0>)
+[553.000000] [host8] [TEST to 2] (8 -- Test --> 2) : {Level = 2, Fragment id = 10}
+[554.000000] [host4] [TEST from 3] (4 <-- Test -- 3) : {Level = 2, Fragment id = 10}
+[554.000000] [host4] [REJECTED to 3] () : {}
+[554.000000] [host4] Basic adjacent edges nr: 0
+[555.000000] [host3] [TEST from 4] (3 <-- Test -- 4) : {Level = 2, Fragment id = 10}
+[555.000000] [host3] [REJECTED to 4] () : {}
+[555.000000] [host3] Basic adjacent edges nr: 1
+[555.000000] [host3] Min Basic adjacent edge: Edge(dNode=1, weight=16, state=<EdgeState.BASIC: 0>)
+[555.000000] [host3] [TEST to 1] (3 -- Test --> 1) : {Level = 2, Fragment id = 10}
+[559.000000] [host2] [INITIATE from 3] (2 <-- Initiate -- 3) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[559.000000] [host2] Basic adjacent edges nr: 2
+[559.000000] [host2] Min Basic adjacent edge: Edge(dNode=1, weight=17, state=<EdgeState.BASIC: 0>)
+[559.000000] [host1] [TEST from 3] (1 <-- Test -- 3) : {Level = 2, Fragment id = 10}
+[559.000000] [host2] [TEST to 1] (2 -- Test --> 1) : {Level = 2, Fragment id = 10}
+[559.000000] [host1] [Place received TEST message from 3 at the end of queue!] () : {}
+[560.000000] [host9] [TEST from 7] (9 <-- Test -- 7) : {Level = 2, Fragment id = 10}
+[560.000000] [host9] [REJECTED to 7] () : {}
+[560.000000] [host9] Basic adjacent edges nr: 0
+[560.000000] [host7] [TEST from 9] (7 <-- Test -- 9) : {Level = 2, Fragment id = 10}
+[560.000000] [host7] [REJECTED to 9] () : {}
+[560.000000] [host7] Basic adjacent edges nr: 0
+[560.000000] [host9] [REPORT to 8] (9 -- Report --> 8) : {Best weight = 100}
+[560.000000] [host7] [REPORT to 4] (7 -- Report --> 4) : {Best weight = 100}
+[563.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 2, Fragment id = 10}
+[563.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[567.000000] [host8] [REPORT from 9] (8 <-- Report -- 9) : {Best weight = 100}
+[567.000000] [host8] Node: 8, Edges: [Edge(dNode=2, weight=18, state=<EdgeState.BASIC: 0>), Edge(dNode=3, weight=4, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=10, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=12, state=<EdgeState.REJECTED: 2>), Edge(dNode=9, weight=9, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: Edge(dNode=2, weight=18, state=<EdgeState.BASIC: 0>), In branch: Edge(dNode=4, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 2, Halt: False
+[569.000000] [host2] [TEST from 8] (2 <-- Test -- 8) : {Level = 2, Fragment id = 10}
+[569.000000] [host2] [REJECTED to 8] () : {}
+[569.000000] [host1] [TEST from 3] (1 <-- Test -- 3) : {Level = 2, Fragment id = 10}
+[569.000000] [host2] [REJECT to 8] (2 -- Reject --> 8) : {}
+[569.000000] [host1] [Place received TEST message from 3 at the end of queue!] () : {}
+[571.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 2, Fragment id = 10}
+[571.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[572.000000] [host8] [REJECT from 2] (8 <-- Reject -- 2) : {}
+[572.000000] [host8] [REJECTED to 2] () : {}
+[572.000000] [host8] Basic adjacent edges nr: 0
+[575.000000] [host1] [TEST from 3] (1 <-- Test -- 3) : {Level = 2, Fragment id = 10}
+[575.000000] [host1] [Place received TEST message from 3 at the end of queue!] () : {}
+[578.000000] [host4] [REPORT from 7] (4 <-- Report -- 7) : {Best weight = 100}
+[578.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.REJECTED: 2>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 2, Halt: False
+[578.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 2, Fragment id = 10}
+[578.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[579.000000] [host5] [INITIATE from 4] (5 <-- Initiate -- 4) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[579.000000] [host5] [INITIATE to 0] (5 -- Initiate --> 0) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[579.000000] [host5] Basic adjacent edges nr: 0
+[588.000000] [host1] [TEST from 3] (1 <-- Test -- 3) : {Level = 2, Fragment id = 10}
+[588.000000] [host1] [Place received TEST message from 3 at the end of queue!] () : {}
+[594.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 2, Fragment id = 10}
+[594.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[598.000000] [host1] [TEST from 3] (1 <-- Test -- 3) : {Level = 2, Fragment id = 10}
+[598.000000] [host1] [Place received TEST message from 3 at the end of queue!] () : {}
+[605.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 2, Fragment id = 10}
+[605.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[607.000000] [host0] [INITIATE from 5] (0 <-- Initiate -- 5) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[607.000000] [host1] [TEST from 3] (1 <-- Test -- 3) : {Level = 2, Fragment id = 10}
+[607.000000] [host0] [INITIATE to 1] (0 -- Initiate --> 1) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[607.000000] [host0] Basic adjacent edges nr: 0
+[607.000000] [host1] [Place received TEST message from 3 at the end of queue!] () : {}
+[614.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 2, Fragment id = 10}
+[614.000000] [host1] [Place received TEST message from 2 at the end of queue!] () : {}
+[637.000000] [host1] [INITIATE from 0] (1 <-- Initiate -- 0) : {Level = 2, Fragment id = 10, State = NodeState.FIND}
+[637.000000] [host1] Basic adjacent edges nr: 2
+[637.000000] [host1] Min Basic adjacent edge: Edge(dNode=3, weight=16, state=<EdgeState.BASIC: 0>)
+[637.000000] [host1] [TEST to 3] (1 -- Test --> 3) : {Level = 2, Fragment id = 10}
+[642.000000] [host1] [TEST from 3] (1 <-- Test -- 3) : {Level = 2, Fragment id = 10}
+[642.000000] [host1] [REJECTED to 3] () : {}
+[642.000000] [host1] Basic adjacent edges nr: 1
+[642.000000] [host1] Min Basic adjacent edge: Edge(dNode=2, weight=17, state=<EdgeState.BASIC: 0>)
+[642.000000] [host1] [TEST to 2] (1 -- Test --> 2) : {Level = 2, Fragment id = 10}
+[647.000000] [host3] [TEST from 1] (3 <-- Test -- 1) : {Level = 2, Fragment id = 10}
+[647.000000] [host3] [REJECTED to 1] () : {}
+[647.000000] [host3] Basic adjacent edges nr: 0
+[647.000000] [host2] [TEST from 1] (2 <-- Test -- 1) : {Level = 2, Fragment id = 10}
+[647.000000] [host2] [REJECTED to 1] () : {}
+[647.000000] [host2] Basic adjacent edges nr: 0
+[647.000000] [host2] [REPORT to 3] (2 -- Report --> 3) : {Best weight = 100}
+[648.000000] [host1] [TEST from 2] (1 <-- Test -- 2) : {Level = 2, Fragment id = 10}
+[648.000000] [host1] [REJECTED to 2] () : {}
+[648.000000] [host1] Basic adjacent edges nr: 0
+[648.000000] [host1] [REPORT to 0] (1 -- Report --> 0) : {Best weight = 100}
+[657.000000] [host3] [REPORT from 2] (3 <-- Report -- 2) : {Best weight = 100}
+[657.000000] [host3] Node: 3, Edges: [Edge(dNode=1, weight=16, state=<EdgeState.REJECTED: 2>), Edge(dNode=2, weight=8, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=11, state=<EdgeState.REJECTED: 2>), Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=8, weight=4, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[657.000000] [host3] [REPORT to 8] (3 -- Report --> 8) : {Best weight = 100}
+[666.000000] [host0] [REPORT from 1] (0 <-- Report -- 1) : {Best weight = 100}
+[666.000000] [host0] Node: 0, Edges: [Edge(dNode=1, weight=3, state=<EdgeState.BRANCH: 1>), Edge(dNode=5, weight=2, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=5, weight=2, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[666.000000] [host0] [REPORT to 5] (0 -- Report --> 5) : {Best weight = 100}
+[670.000000] [host8] [REPORT from 3] (8 <-- Report -- 3) : {Best weight = 100}
+[670.000000] [host8] Node: 8, Edges: [Edge(dNode=2, weight=18, state=<EdgeState.REJECTED: 2>), Edge(dNode=3, weight=4, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=10, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=12, state=<EdgeState.REJECTED: 2>), Edge(dNode=9, weight=9, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=4, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[670.000000] [host8] [REPORT to 4] (8 -- Report --> 4) : {Best weight = 100}
+[679.000000] [host4] [REPORT from 8] (4 <-- Report -- 8) : {Best weight = 100}
+[679.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.REJECTED: 2>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[679.000000] [host4] [Place received REPORT message from 8 at the end of queue!] () : {}
+[684.000000] [host4] [REPORT from 8] (4 <-- Report -- 8) : {Best weight = 100}
+[684.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.REJECTED: 2>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[684.000000] [host4] [Place received REPORT message from 8 at the end of queue!] () : {}
+[689.000000] [host4] [REPORT from 8] (4 <-- Report -- 8) : {Best weight = 100}
+[689.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.REJECTED: 2>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[689.000000] [host4] [Place received REPORT message from 8 at the end of queue!] () : {}
+[694.000000] [host5] [REPORT from 0] (5 <-- Report -- 0) : {Best weight = 100}
+[694.000000] [host5] Node: 5, Edges: [Edge(dNode=0, weight=2, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=7, state=<EdgeState.REJECTED: 2>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=4, weight=1, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[694.000000] [host5] [REPORT to 4] (5 -- Report --> 4) : {Best weight = 100}
+[699.000000] [host4] [REPORT from 8] (4 <-- Report -- 8) : {Best weight = 100}
+[699.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.REJECTED: 2>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[699.000000] [host4] [Place received REPORT message from 8 at the end of queue!] () : {}
+[755.000000] [host4] [REPORT from 5] (4 <-- Report -- 5) : {Best weight = 100}
+[755.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.REJECTED: 2>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>)], State: FIND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 1, Halt: False
+[755.000000] [host4] [REPORT to 8] (4 -- Report --> 8) : {Best weight = 100}
+[762.000000] [host4] [REPORT from 8] (4 <-- Report -- 8) : {Best weight = 100}
+[762.000000] [host4] Node: 4, Edges: [Edge(dNode=3, weight=11, state=<EdgeState.REJECTED: 2>), Edge(dNode=5, weight=1, state=<EdgeState.BRANCH: 1>), Edge(dNode=6, weight=6, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=5, state=<EdgeState.BRANCH: 1>), Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>)], State: FOUND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=8, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 0, Halt: False
+[762.000000] [host4] [TERMINATE to 5] (4 -- Terminate --> 5) : {Leader = 4}
+[762.000000] [host4] [TERMINATE to 6] (4 -- Terminate --> 6) : {Leader = 4}
+[762.000000] [host4] [TERMINATE to 7] (4 -- Terminate --> 7) : {Leader = 4}
+[762.000000] [host4] [TERMINATE to 8] (4 -- Terminate --> 8) : {Leader = 4}
+[762.000000] [host4] [FINISHED with leader 4] () : {}
+[766.000000] [host8] [REPORT from 4] (8 <-- Report -- 4) : {Best weight = 100}
+[766.000000] [host8] Node: 8, Edges: [Edge(dNode=2, weight=18, state=<EdgeState.REJECTED: 2>), Edge(dNode=3, weight=4, state=<EdgeState.BRANCH: 1>), Edge(dNode=4, weight=10, state=<EdgeState.BRANCH: 1>), Edge(dNode=7, weight=12, state=<EdgeState.REJECTED: 2>), Edge(dNode=9, weight=9, state=<EdgeState.BRANCH: 1>)], State: FOUND, Fragment id: 10, Level: 2, Best edge: None, Best weight: 100, Test edge: None, In branch: Edge(dNode=4, weight=10, state=<EdgeState.BRANCH: 1>), Find Count: 0, Halt: False
+[766.000000] [host8] [TERMINATE to 3] (8 -- Terminate --> 3) : {Leader = 4}
+[766.000000] [host8] [TERMINATE to 4] (8 -- Terminate --> 4) : {Leader = 4}
+[766.000000] [host8] [TERMINATE to 9] (8 -- Terminate --> 9) : {Leader = 4}
+[766.000000] [host8] [FINISHED with leader 4] () : {}
+[771.000000] [host6] [TERMINATE from 4] (6 <-- Terminate -- 4) : {Leader = 4}
+[771.000000] [host6] [FINISHED with leader 4] () : {}
+[772.000000] [host9] [TERMINATE from 8] (9 <-- Terminate -- 8) : {Leader = 4}
+[772.000000] [host9] [FINISHED with leader 4] () : {}
+[776.000000] [host7] [TERMINATE from 4] (7 <-- Terminate -- 4) : {Leader = 4}
+[776.000000] [host7] [FINISHED with leader 4] () : {}
+[779.000000] [host3] [TERMINATE from 8] (3 <-- Terminate -- 8) : {Leader = 4}
+[779.000000] [host3] [TERMINATE to 2] (3 -- Terminate --> 2) : {Leader = 4}
+[779.000000] [host3] [FINISHED with leader 4] () : {}
+[793.000000] [host2] [TERMINATE from 3] (2 <-- Terminate -- 3) : {Leader = 4}
+[793.000000] [host2] [FINISHED with leader 4] () : {}
+[816.000000] [host5] [TERMINATE from 4] (5 <-- Terminate -- 4) : {Leader = 4}
+[816.000000] [host5] [TERMINATE to 0] (5 -- Terminate --> 0) : {Leader = 4}
+[816.000000] [host5] [FINISHED with leader 4] () : {}
+[848.000000] [host0] [TERMINATE from 5] (0 <-- Terminate -- 5) : {Leader = 4}
+[848.000000] [host0] [TERMINATE to 1] (0 -- Terminate --> 1) : {Leader = 4}
+[848.000000] [host0] [FINISHED with leader 4] () : {}
+[867.000000] [host1] [TERMINATE from 0] (1 <-- Terminate -- 0) : {Leader = 4}
+[867.000000] [host1] [FINISHED with leader 4] () : {}
+[867.000000] [] Oops! Deadlock or code not perfectly clean.
+[867.000000] [] 2 actors are still running, waiting for something.
+[867.000000] [] Legend of the following listing: "Actor <pid> (<name>@<host>): <status>"
+[867.000000] [] Actor 5 (node@host4): waiting for communication activity 0x560e3962a1e0 () in state WAITING to finish
+[867.000000] [] Actor 9 (node@host8): waiting for communication activity 0x560e3962a3e0 () in state WAITING to finish
+[867.000000] [] Simulation is over
